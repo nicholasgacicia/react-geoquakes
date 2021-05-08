@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.app {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* *************************************** */
+/* ************    Navbar    ************* */
+/* *************************************** */
+.navbar {
+  height: 10vh;
+  width: 100%;
+  background-color: #2a3a4d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem 1rem 0;
+  box-shadow: 2px 2px 5px rgba(145, 145, 145, 0.493);
+}
+.logo-title {
+  margin-left: 5%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+h1 {
+  padding-left: 2rem;
+  display: inline-block;
+  color: rgb(255, 255, 255);
+}
+
+.quake-icon {
+  display: inline-block;
+  width: 50px;
+  filter: invert() brightness(100);
+}
+
+/* *************************************** */
+/* ***********    Containers    ********** */
+/* *************************************** */
+.main-content-div {
+  display: flex;
+  height: 90vh;
+}
+
+.mapContainer {
+  height: 100%;
+  width: 100%;
+  padding-top: 1em;
+  padding-left: 2em;
+  position: relative;
+}
+
+.quakeContainer {
+  height: 90%;
+  width: 500px;
+
+  padding: 1rem;
+  margin-right: 1rem;
+  box-shadow: 10px 30px 50px rgba(203, 203, 203, 0.514);
+}
+
+/* *************************************** */
+/* ********    Quake Container    ******** */
+/* *************************************** */
+.quakeContainer > div:nth-child(1) {
+  display: flex;
+  height: 15%;
+}
+
+#info {
+  height: 85%;
+  overflow: scroll;
+  box-shadow: 0 0 5px rgba(140, 140, 140, 0.591);
+  border-radius: 2px;
+}
+
+.quake-count {
+  font-size: 2.2rem;
+  color: #34404e;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.quake-count + p {
+  margin-top: 0;
+}
+
+.earthquake-details {
+  padding: 10px 20px;
+}
+
+.earthquake-details p {
+  padding: 0;
+  margin: 0;
+}
+
+.earthquake-details p:nth-of-type(2) {
+  color: rgb(34, 34, 34);
+  font-size: 0.9rem;
+  text-align: right;
+}
+
+.earthquake-details:nth-of-type(odd) {
+  background-color: rgb(210, 210, 210);
+}
+
+.earthquake-details:nth-of-type(even) {
+  background-color: rgb(244, 244, 244);
+}
+
+/* *************************************** */
+/* ********          Form         ******** */
+/* *************************************** */
+
+form {
+  margin-right: 5%;
+}
+
+.form-input {
+  display: inline-block;
+  padding: 10px 10px;
+}
+select {
+  border-radius: 2px;
+  cursor: pointer;
+}
+label {
+  display: block;
+  color: white;
+  padding-bottom: 5px;
+  text-align: center;
+}
+input[type="submit"] {
+  background: #14212e;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 5px;
+  border: #73899d;
+  cursor: pointer;
+}
+
+input[type="submit"]:focus,
+input[type="submit"]:hover {
+  background: #485d71;
+  border: none;
+}
