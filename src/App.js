@@ -86,11 +86,11 @@ class App extends Component {
             </div>
             <div className="quakeContainer">
               <div>
-                {/* <h2>
+                <h2>
                   {this.state.quakesData.length > 0
                     ? `${startDate} - ${endDate}`
                     : "Select a Timeframe and Magnitude"}
-                </h2> */}
+                </h2>
                 <div>
                   <h2 className="quake-count">
                     {this.state.quakesData.length}
