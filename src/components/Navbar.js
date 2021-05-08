@@ -6,7 +6,7 @@ function Navbar(props) {
     <div className="navbar">
       <div className="logo-title">
         <img className="quake-icon" src={icon} alt="quake icon" />
-        <h1>Quakes Mapper</h1>
+        <h1>Geoquakes</h1>
       </div>
       <form action="/" method="get">
         <div className="form-input">

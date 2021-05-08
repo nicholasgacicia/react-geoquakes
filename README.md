@@ -1,1 +1,1 @@
-# react-geoquakes
+# React Geoquakes
